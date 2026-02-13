@@ -1,14 +1,20 @@
 import React from "react";
 import "../App.css";
 import Footer from "../components/Footer";
+import pic1 from "../assets/pic1.jpeg";
+import pic7 from "../assets/pic7.jpeg";
+import pic3 from "../assets/pic3.jpeg";
+import pic4 from "../assets/pic4.jpeg";
+import pic5 from "../assets/pic5.jpeg";
+import pic6 from "../assets/pic6.jpeg";
 
 const photos = [
-  { src: "/assets/pic1.jpeg", caption: "Our First Photo" },
-  { src: "/assets/pic6.jpeg", caption: "My left and right Hearts" },
-  { src: "/assets/pic3.jpeg", caption: "Date time!" },
-  { src: "/assets/pic4.jpeg", caption: "Pujo Vibes" },
-  { src: "/assets/pic5.jpeg", caption: "Moments caught naturally" },
-  { src: "/assets/pic7.jpeg", caption: "Whole Night Hubbas..." },
+  { src: pic1, caption: "Our First Photo" },
+  { src: pic6, caption: "My left and right Hearts" },
+  { src: pic3, caption: "Date time!" },
+  { src: pic4, caption: "Pujo Vibes" },
+  { src: pic5, caption: "Moments caught naturally" },
+  { src: pic7, caption: "Whole Night Hubbas..." },
 ];
 
 const Memories: React.FC = () => {
