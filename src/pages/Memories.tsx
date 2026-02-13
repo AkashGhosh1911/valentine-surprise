@@ -30,7 +30,7 @@ const Memories: React.FC = () => {
           </figure>
         ))}
       </div>
-      <Footer link="/love-letter" text="Our Love Letter" />
+      <Footer link="/love-letter" text="Love Letter" />
     </section>
   );
 };
