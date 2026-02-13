@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   return (
     <section className="home">
       <div className="hero">
-        <h1 className="hero-title">Happy Valentine’s Day Piu❤️</h1>
+        <h1 className="hero-title">Happy Valentine’s Day <br /> Piu❤️</h1>
         <p className="hero-sub">To my favorite person — today and always.</p>
         <div className="hero-actions">
           <Link to="/memories" className="btn">Our Memories</Link>
