@@ -14,7 +14,7 @@ const App: React.FC = () => {
         <NavBar />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/valentine-surprise/" element={<Home />} />
             <Route path="/memories" element={<Memories />} />
             <Route path="/love-letter" element={<LoveLetter />} />
             <Route path="/coupon" element={<Coupon />} />
