@@ -12,7 +12,7 @@ const App: React.FC = () => {
   return (
     <BrowserRouter basename="/valentine-surprise">
       <div id="app-root">
-        <NavBar />
+        {/* <NavBar /> */}
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

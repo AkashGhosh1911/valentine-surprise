@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "../App.css";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 const QUESTIONS = [
   "Which moment of ours automatically makes you smile?",
   "What is that one small thing I do that makes you feel loved?",
   "If we plan a trip together, where do you think we should go?",
-  "When you think about us, what comes to your mind first?",
+  "When you think about me, what comes to your mind first?",
   "What is one thing you wish we definitely do together in the future?",
 ];
 
 const LoveQuestions: React.FC = () => {
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState("");
   const [sending, setSending] = useState(false);
@@ -36,6 +38,7 @@ const LoveQuestions: React.FC = () => {
         );
         setSending(true);
         setError(null);
+        navigate("/coupon");
       }
     } catch (e) {
       setError("Failed to send. Please check your EmailJS configuration.");

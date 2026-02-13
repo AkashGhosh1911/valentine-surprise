@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../App.css'
 
 const Coupon: React.FC = () => {
-  const code = 'MYNTRA-LOVE20'
+  const code = 'Card No:- 6001220034676569 Pin:-267811'
   const [copied, setCopied] = useState(false)
 
   const copy = async () => {

@@ -1,14 +1,15 @@
-import React from 'react'
-import '../App.css'
+import React from "react";
+import "../App.css";
+import Footer from "../components/Footer";
 
 const photos = [
-  { src: 'src/assets/pic1.jpeg', caption: 'Our first trip' },
-  { src: 'src/assets/pic6.jpeg', caption: 'That cozy evening' },
-  { src: 'src/assets/pic3.jpeg', caption: 'Sunset together' },
-  { src: 'src/assets/pic4.jpeg', caption: 'Laughs and coffee' },
-  { src: 'src/assets/pic5.jpeg', caption: 'That smile' },
-  { src: 'src/assets/pic7.jpeg', caption: 'Dance under lights' },
-]
+  { src: "src/assets/pic1.jpeg", caption: "Our First Photo" },
+  { src: "src/assets/pic6.jpeg", caption: "My left and right Hearts" },
+  { src: "src/assets/pic3.jpeg", caption: "Date time!" },
+  { src: "src/assets/pic4.jpeg", caption: "Pujo Vibes" },
+  { src: "src/assets/pic5.jpeg", caption: "Moments caught naturally" },
+  { src: "src/assets/pic7.jpeg", caption: "Whole Night Hubbas..." },
+];
 
 const Memories: React.FC = () => {
   return (
@@ -23,8 +24,9 @@ const Memories: React.FC = () => {
           </figure>
         ))}
       </div>
+      <Footer link="/love-letter" text="Our Love Letter" />
     </section>
-  )
-}
+  );
+};
 
-export default Memories
+export default Memories;

@@ -10,7 +10,6 @@ const Home: React.FC = () => {
         <p className="hero-sub">To my favorite person — today and always.</p>
         <div className="hero-actions">
           <Link to="/memories" className="btn">Our Memories</Link>
-          <Link to="/love-letter" className="btn ghost">Love Letter</Link>
         </div>
       </div>
       <div className="floating-hearts" aria-hidden>
