@@ -118,7 +118,7 @@ body {
 }
 .hero-actions {
   display: flex;
-  gap: 0.75rem;
+  gap: 2.00rem;
   justify-content: center;
 }
 .btn {
@@ -128,6 +128,7 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  text-decoration: none !important;
 }
 .btn.ghost {
   background: transparent;
@@ -191,7 +192,7 @@ body {
 }
 .photo-card img {
   width: 100%;
-  aspect-ratio: 16/10;
+  aspect-ratio: 5/7;
   object-fit: cover;
   display: block;
 }
@@ -245,6 +246,62 @@ body {
   border: 1px dashed rgba(255, 107, 154, 0.3);
 }
 
+/* Love Questions page */
+.love-questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.questions-card {
+  max-width: 720px;
+  width: 100%;
+  background: var(--card);
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(255, 107, 154, 0.06);
+  text-align: center;
+}
+.question-count {
+  color: var(--muted);
+  margin: 0.25rem 0;
+}
+.question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.question-text {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.question-form textarea {
+  resize: vertical;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+}
+.question-form .error {
+  color: #c0392b;
+  font-size: 0.95rem;
+}
+
+/* subtle transition between question cards */
+.questions-card {
+  transition: transform 320ms ease, opacity 320ms ease;
+}
+
+@media (max-width: 520px) {
+  .questions-card {
+    padding: 1rem;
+  }
+  .question-text {
+    font-size: 1rem;
+  }
+}
 @keyframes fadeIn {
   to {
     opacity: 1;

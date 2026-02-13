@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/AkashGhosh1911/valentine-surprise",
+  "homepage": "https://akashghosh1911.github.io/valentine-surprise/",
   "name": "valentine-gift",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^6.15.0"

@@ -2,12 +2,12 @@ import React from 'react'
 import '../App.css'
 
 const photos = [
-  { src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop', caption: 'Our first trip' },
-  { src: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop', caption: 'That cozy evening' },
-  { src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop', caption: 'Sunset together' },
-  { src: 'https://images.unsplash.com/photo-1504198266287-1659872e6590?q=80&w=800&auto=format&fit=crop', caption: 'Laughs and coffee' },
-  { src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop', caption: 'That smile' },
-  { src: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop', caption: 'Dance under lights' },
+  { src: 'src/assets/pic1.jpeg', caption: 'Our first trip' },
+  { src: 'src/assets/pic6.jpeg', caption: 'That cozy evening' },
+  { src: 'src/assets/pic3.jpeg', caption: 'Sunset together' },
+  { src: 'src/assets/pic4.jpeg', caption: 'Laughs and coffee' },
+  { src: 'src/assets/pic5.jpeg', caption: 'That smile' },
+  { src: 'src/assets/pic7.jpeg', caption: 'Dance under lights' },
 ]
 
 const Memories: React.FC = () => {
