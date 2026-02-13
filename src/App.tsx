@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Memories from "./pages/Memories";
 import LoveLetter from "./pages/LoveLetter";
