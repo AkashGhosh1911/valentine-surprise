@@ -3,9 +3,9 @@ import "../App.css";
 import Footer from "../components/Footer";
 
 const photos = [
-  { src: "../src/assets/pic1.jpeg", caption: "Our First Photo" },
-  { src: "../src/assets/pic6.jpeg", caption: "My left and right Hearts" },
-  { src: "../src/assets/pic3.jpeg", caption: "Date time!" },
+  { src: "../assets/pic1.jpeg", caption: "Our First Photo" },
+  { src: "../assets/pic6.jpeg", caption: "My left and right Hearts" },
+  { src: "../assets/pic3.jpeg", caption: "Date time!" },
   { src: "../src/assets/pic4.jpeg", caption: "Pujo Vibes" },
   { src: "../src/assets/pic5.jpeg", caption: "Moments caught naturally" },
   { src: "../src/assets/pic7.jpeg", caption: "Whole Night Hubbas..." },
