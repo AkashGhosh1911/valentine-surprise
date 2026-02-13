@@ -1,0 +1,307 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- Valentine theme styles --- */
+:root {
+  --bg: #fff6f9;
+  --card: #ffffff;
+  --accent: #ff6b9a;
+  --muted: #7a6b6b;
+}
+
+body {
+  background: linear-gradient(180deg, #fff6f9 0%, #fff 60%);
+  color: #333;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+}
+
+#app-root {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #ffeaf0;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.brand {
+  font-weight: 700;
+  color: var(--accent);
+}
+.nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #444;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+.nav-links a.active {
+  background: rgba(255, 107, 154, 0.12);
+  color: var(--accent);
+}
+
+.menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.35rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  outline: none;
+  border: none;
+}
+
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.hero-title {
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+}
+.hero-sub {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(255, 107, 154, 0.18);
+}
+
+.floating-hearts {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  opacity: 0.9;
+}
+.floating-hearts span {
+  animation: float 4s ease-in-out infinite;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.floating-hearts span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.floating-hearts span:nth-child(3) {
+  animation-delay: 1s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin: 0.5rem 0;
+}
+.section-sub {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.memories {
+  padding: 1rem;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.photo-card {
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.photo-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+}
+.photo-card figcaption {
+  padding: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.love-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.letter-card {
+  max-width: 720px;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(255, 107, 154, 0.06);
+  text-align: center;
+}
+.letter-text {
+  line-height: 1.7;
+  color: #444;
+  font-size: 1.05rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.2s;
+}
+
+.coupon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.coupon-card {
+  background: linear-gradient(180deg, #fff #fff6f9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.coupon-code {
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  margin: 0.75rem 0;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px dashed rgba(255, 107, 154, 0.3);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .nav {
+    padding: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links a {
+    margin: 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .letter-card {
+    padding: 1.25rem;
+  }
+  .coupon-card {
+    padding: 1rem;
+  }
+}
